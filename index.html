@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryken Lingamm</title>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2386008618616907"
+     crossorigin="anonymous"></script>
+     
+     <meta name="google-adsense-account" content="ca-pub-2386008618616907">
+     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Blog Grid */
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+.card{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: center;
+  max-width: 100%;
+  margin-block: 2rem;
+  gap: 2rem;
+  transition: var(--trans-03);
+}
+
+.card .container{
+  position: relative;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.card .container_02{   
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+}
+
+.overlay{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.966);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: var(--trans-03);
+    z-index: 100;
+}
+
+
+.card .container:hover .overlay{
+    height: 100%;
+}
+
+#desc{
+    width: 100%;
+    height: 0;
+    transition: var(--trans-03);
+}
+
+.card .container_02:hover #desc{
+    height: 100%;
+}
+
+
+.container-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  
+.tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: 1rem;
+}
+  
+.tag + .tag {
+    margin-left: .5em;
+}
+  
+.tag-blue {
+    background: var(--primary-color);
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+    color: #fafafa;
+}
+  
+.container-body h4 {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+  
+.container-body p {
+    font-size: 1rem;
+}
+    </style>
+</head>
+<body>
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
+   <link rel="manifest" href="../favicon_io/site.webmanifest">
+   
+    <nav class="menu">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class="fa-solid fa-bars"></i>
+        </label>
+        <label class="logo">Ryken</label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Blog Grid -->
+    <div class="card">
+            <div class="container">
+                <a href="#" style="text-decoration: none; color: inherit;">
+                    <img src="Pictures/antique-car-3778936_1280.jpg" alt="post_image" width="600" height="420">
+                    <div class="overlay">
+                        <div class="container-body">
+                            <span class="tag tag-blue">Car</span>
+                            <h4>The Most Beutiful Car In The World Is Here</h4>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="container_02">
+                <a href="#" style="text-decoration: none; color: inherit;">
+                    <img src="Pictures/car1.jpg" alt="post_image" width="350" height="215">
+                    
+                        <div class="desc">
+             <div class="container-body">
+                            <span class="tag tag-blue">Tag2</span>
+                            <h4>"Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                      </div>
+            </div>
+                </a>
+            </div>
+            <div class="container_02">
+                <a href="#" style="text-decoration: none; color: inherit;">
+                    <img src="Pictures/car2.jpeg" alt="post_image" width="350" height="215">
+                    
+                        <div class="desc">
+             <div class="container-body">
+                            <span class="tag tag-blue">Tag2</span>
+                            <h4>"Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                      </div>
+            </div>
+                </a>
+            </div>
+            <div class="container_02">
+                <a href="#" style="text-decoration: none; color: inherit;">
+                    <img src="Pictures/car3.jpg" alt="post_image" width="350" height="215">
+                    
+                        <div class="desc">
+             <div class="container-body">
+                            <span class="tag tag-blue">Tag2</span>
+                            <h4>"Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                      </div>
+            </div>
+                </a>
+            </div>
+            <div class="container_02">
+                <a href="#" style="text-decoration: none; color: inherit;">
+                    <img src="Pictures/car2.jpeg" alt="post_image" width="350" height="215">
+                    
+                        <div class="desc">
+             <div class="container-body">
+                            <span class="tag tag-blue">Tag2</span>
+                            <h4>"Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                      </div>
+            </div>
+                </a>
+            </div>
+            <div class="container_02">
+                <a href="#" style="text-decoration: none; color: inherit;">
+                    <img src="Pictures/car4.jpg" alt="post_image" width="350" height="215">
+                    
+                        <div class="desc">
+             <div class="container-body">
+                            <span class="tag tag-blue">Tag2</span>
+                            <h4>"Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                      </div>
+            </div>
+                </a>
+            </div>
+            <div class="container_02">
+                <a href="#" style="text-decoration: none; color: inherit;">
+                    <img src="Pictures/car3.jpg" alt="post_image" width="350" height="215">
+                    
+                        <div class="desc">
+             <div class="container-body">
+                            <span class="tag tag-blue">Tag2</span>
+                            <h4>"Lorem ipsum dolor sit amet, consectetur adipiscing elit</h4>
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                      </div>
+            </div>
+                </a>
+            </div>
+</div>
+
+<div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="fa-brands fa-x-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+            <ul class="footer-bar">
+                <li class="list-inline-item"><a href="">Home</a></li>
+                <li class="list-inline-item"><a href="">About</a></li>
+                <li class="list-inline-item"><a href="">Terms</a></li>
+                <li class="list-inline-item"><a href="">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">Ryken Lingamm © 2023</p>
+        </footer>
+    </div>
+
+
+</body>
+</html>
